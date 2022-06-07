@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Submission Form</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="container">
+    <form method="post" id="dataform">
+      <p> Please enter the data to be stored</p>
+      <input type="number" name="Client_ID" id="cid" placeholder="client_id" required/><br />
+      <input type="text" name="Client_Email" id="cem" placeholder="client_email" required/><br />
+	    <input type="text" name="Client_Name" id="cnme" placeholder="client_name" required/><br />
+	    <input type="number" name="Client_Income" id="cinc" placeholder="client_income" required/><br />
+	    <input type="number" name="Client_Savings" id="csav" placeholder="client_savings" required/><br />
+	    <input type="text" name="Client_Contact" id="ccont" placeholder="client_contact" required/><br />
+        <input type="submit" id="but" value="SUBMIT"/><br />
+    </form>
+    <span id="response">
+
+    </span>
+    <script>
+          jQuery('#dataform').on('submit', function check(){
+                var c_id=document.getElementById('cid').value;
+                var c_email=document.getElementById('cem').value;
+                var c_name=document.getElementById('cnme').value;
+                var c_income=document.getElementById('cinc').value;
+                var c_saving=document.getElementById('csav').value;
+                var c_contact=document.getElementById('ccont').value;
+            
+
+                if(c_income<c_saving){
+                    alert('income can not be less than savings');
+                }
+                if((c_contact.length())<10){
+                    alert('contact number can not be less than 10 digits');
+                }
+            });
+    </script>
+  </div>
+  <span id="response">
+
+  </span>
+</body>
+</html>

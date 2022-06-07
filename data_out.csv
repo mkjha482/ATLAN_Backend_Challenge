@@ -1,0 +1,6 @@
+,range,majorDimension,values
+0,Sheet1!A1:F1000,ROWS,"['Client_ID', 'Client_Email', 'Client_Name', 'Client_Income', 'Client_Savings', 'Client_Contact']"
+1,Sheet1!A1:F1000,ROWS,"['101', 'Mayank Jha', 'Mayank', '12000', '5000', '9031838924']"
+2,Sheet1!A1:F1000,ROWS,"['102', '500076029@stu.upes.ac.in', 'Mayank Jha', '12000', '5000', '9031838924']"
+3,Sheet1!A1:F1000,ROWS,"['103', 'atlan.assignment@atlan.co.in', 'Atlan', '4000000000', '200000000', 'xxxxxxxxxx']"
+4,Sheet1!A1:F1000,ROWS,"['104', 'raghav@gmail.com', 'raghav', '12300', '1200', '1234456789']"
